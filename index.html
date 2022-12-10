@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AdminDashBoard</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+       
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fab fa-apple"></i></span>
+                            <span class="title">Admin</span>
+                        </a>
+                    </li> <!-- admin close -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li><!-- Dashboard close -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fab fa-product-hunt"></i></span>
+                            <span class="title">Products</span>
+                        </a>
+                    </li><!--  -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-receipt"></i></span>
+                            <span class="title">Subscriptions</span>
+                        </a>
+                    </li><!--  -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-paste"></i></span>
+                            <span class="title">Posts</span>
+                        </a>
+                    </li><!--  -->
+                    <li>
+                      
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-cogs"></i></span>
+                            <span class="title">setting</span>
+                        </a>
+                    </li><!--  -->
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-unlock"></i></span>
+                            <span class="title">Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                            <span class="title">Sign Out</span>
+                        </a>
+                    </li><!-- sign-out -->
+
+                </ul>
+            </div><!-- aside close -->
+            <!-- //////////////// -->
+            <!-- main section -->
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle">
+                        <i class="fas fa-bars"></i>
+                     </div>
+                                <!-- search -->
+                            <div class="search">
+                                <label > 
+                                    <input type="text" placeholder="Search Here">
+                                    <i class="fas fa-search"></i>
+                                </label>
+                            </div>
+                           <!--userImage  --> 
+                            <div class="toggle-mode">
+                              <input type="checkbox" id="toggle-btn">
+                              <label for="toggle-btn">
+                                <img src="./images/Steren-Glossy-circle.svg" alt="" class="mode light">
+                                <img src="./images/Steren-Glossy-circle.svg" alt="" class=" mode dark">
+                              </label>
+                            </div> 
+                    </div>
+
+                    <!-- cards -->
+                    <div class="cardbox">
+                        <div class="card">
+                            <div>
+                                <div class="numbers">1,504</div>
+                                <div class="cardName">Daily Views</div>
+                            </div>
+                            <div class="iconBx"><i class="far fa-eye"></i></div>
+                        </div><!-- view close -->
+                        <div class="card">
+                            <div>
+                                <div class="numbers">80</div>
+                                <div class="cardName">Sales</div>
+                            </div>
+                            <div class="iconBx"><i class="fas fa-shopping-cart"></i></div>
+                        </div><!--sales close  -->
+                        <div class="card">
+                            <div>
+                                <div class="numbers">4</div>
+                                <div class="cardName">Notification</div>
+                            </div>
+                            <div class="iconBx"><i class="far fa-bell"></i></div>
+                        </div><!--  -->
+                        <div class="card">
+                            <div>
+                                <div class="numbers">$7,842</div>
+                                <div class="cardName">Earning</div>
+                            </div>
+                            <div class="iconBx"><i class="fas fa-dollar-sign"></i>
+                            </div>
+                        </div><!--  --> 
+                    </div>
+                   <!-- //////////////////// -->
+                 
+                <div class="graphbox">
+                    <div class="box">
+                       <div id="chart"></div>
+                    </div>
+                    <div class="box">
+                        <div id="bar-chart"></div> 
+                    </div>
+                </div>
+                <!-- order details list -->
+                <div class="details">
+                    <!-- order details list -->
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Recent Orders</h2>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                   <td>Name</td>
+                                   <td>Price</td>
+                                   <td>Payement</td>
+                                   <!--  <td>Status<td>-->
+                                   
+                                </tr>              
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Star Refrigerator</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                 <!--    <td><span class="status delivered">Delivered</span></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Window Coolers</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                    <!--  <td><span class="status pending">Pending</span></td>-->
+                                </tr>
+                                <tr>
+                                    <td>Speakers</td>
+                                    <td>$620</td>
+                                    <td>Paid</td>
+                                   <!--   <td><span class="status return">Return</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Hp laptop</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                  <!--    <td><span class="status inprogress">In Progress</span></td>-->
+                                </tr>
+                                <tr>
+                                    <td>Apple Watch</td>
+                                    <td>$1200</td>
+                                    <td>Paid</td>
+                                   <!--  <td><span class="status delivered">Delivered</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Wall Fan</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                    <!--<td><span class="status pending">Pending</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Adidas Shoes</td>
+                                    <td>$630</td>
+                                    <td>Paid</td>
+                                    <!--  <td><span class="status return">Return</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Denim Shirts</td>
+                                    <td>$575</td>
+                                    <td>Due</td>
+                                   <!--   <td><span class="status inprogress">In Progress</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Casual Shoes</td>
+                                    <td>$576</td>
+                                    <td>Paid</td>
+                                   <!--  <td><span class="status delivered">Delivered</span></td>-->
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Wall fan</td>
+                                    <td>$110</td>
+                                    <td>Due</td>
+                                   <!--   <td><span class="status pending">Pending</span></td>-->
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- //////////////// -->
+                    <!-- New Customers -->
+                    <div class="recentDiagnosis">
+                        <div class="cardHeader">
+                            <h2>Recent Diagnosis</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="images/ali.png" alt="patient1"></div></td>
+                                <td><h4>Ali  <br><span>Tanta</span></h4></td>
+                               <td>ali22@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="images/people-2.jpg" alt="patient1"></div></td>
+                                <td><h4>lillian <br><span>Cairo</span></h4></td>
+                                <td>lillian52@gmail.com</td>
+                            </tr>
+                            <tr>
+                              
+                                <td width="60px"><div class="imgbx"><img src="images/people-4.jpg" alt="patient1"></div></td>
+                                <td><h4>mina<br><span>Banha</span></h4></td>
+                                <td>mina65@yahoo.com</td>
+                            </tr>
+                            <tr>
+                               
+                                <td width="60px"><div class="imgbx"><img src="images/people-5.jpg" alt="patient1"></div></td>
+                                <td><h4>kareem<br><span>Giza</span></h4></td>
+                                
+                                <td>kareem78@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="images/client2.jpg" alt="patient1"></div></td>
+                                <td><h4>Nadeen<br><span>Cairo</span></h4></td>
+                                <td>nadeen12@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="images/client3.jpg" alt="patient1"></div></td>
+                                <td><h4>Noor<br><span>Helwan</span></h4></td>
+                                <td>noor98@yahoo.com</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+
+
+                </div>
+
+
+
+                </div>       
+            </div>
+
+            <!-- ////////////////// -->
+
+        </div> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.36.3/apexcharts.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
